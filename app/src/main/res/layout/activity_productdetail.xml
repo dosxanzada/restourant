@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_productdetail"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="lessons.kz.kazntu.a29042017.ProductDetailActivity"
+    android:orientation="vertical"
+    android:background="@color/colorAdina1">
+
+    <android.support.v7.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view"
+        android:layout_gravity="center"
+        android:layout_width="350dp"
+        android:layout_height="match_parent"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        card_view:cardCornerRadius="5dp"
+        card_view:contentPadding="10dp"
+        card_view:cardElevation="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                app:srcCompat="@drawable/recipedia5"
+                android:id="@+id/imageViewPhoto"
+                android:scaleType="fitCenter"
+                android:layout_margin="5dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="5dp"
+                android:background="#f7ff00">
+
+                <TextView
+                    android:text="Номері"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textViewId"
+                    android:layout_margin="5dp"
+                    android:textStyle="bold|italic"/>
+
+                <TextView
+                    android:text="Аты"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textViewName"
+                    android:layout_margin="5dp"
+                    android:textStyle="bold|italic"/>
+
+                <TextView
+                    android:text="Бағасы"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textViewPrice"
+                    android:layout_margin="5dp"
+                    android:textStyle="bold|italic"/>
+            </LinearLayout>
+
+            <Button
+                android:text="Тапсырыс беру"
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="15dp"
+                android:background="@color/colorAccent"
+                android:textColor="#fff"
+                android:textStyle="bold" />
+
+            <Button
+                android:text="Артқа қайту"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="15dp"
+                android:id="@+id/button"
+                android:background="@color/colorPrimary"
+                android:textColor="#fff"/>
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>
